@@ -9,12 +9,19 @@
     
     if(a != 0){
 
-        console.log("A equação do terceiro grau montada com os valores informados é: "+a+"x^2+"+b+"x+"+c+"=0");
+        let raiz1 = Number((-b + Math.sqrt(delta)) / 2 * a);
+        let raiz2 = Number((-b - Math.sqrt(delta)) / 2 * a);
+        console.log("Raiz 1: "+raiz1);
+        console.log("Raiz 2: "+raiz2);
+
+
+        console.log("A equação do segundo grau montada com os valores informados é: "+a+"x^2+"+b+"x+"+c+"=0");
         console.log("O delta dessa equação é: "+delta);
 
         if(delta > 0)
         {
             console.log("Essa equação possui duas raízes reais.");
+            
         }else if(delta == 0)
         {
             console.log("Essa equação possui apenas uma raiz real.");
@@ -29,3 +36,5 @@
     else{
         console.log("ATENÇÃO!! O COEFICIENTE A PRECISA SER DIFERENTE DE ZERO!");
     }
+
+    //raiz quadrada - Math.sqrt
